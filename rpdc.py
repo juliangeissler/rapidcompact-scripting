@@ -135,6 +135,8 @@ def uploadRawModel(modelFile, fileExt, uploadURLs, accessToken, baseUrl):
 
     # upload binary data via PUT
     print("Uploading model file ...")
+    print("url_model")
+    print(url_model)
     req = urllib.request.Request(url_model, data=dataModel.read(), method='PUT')
     response, code = executeServerRequest(req)
 
